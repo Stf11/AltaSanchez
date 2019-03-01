@@ -1,0 +1,431 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+body{
+    color: #000;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+aside{
+    background: #114478;
+    padding: 1.5em 0 3.5em 0;
+    overflow: hidden;
+    width: 100%;
+    z-index: 1;
+}
+
+footer{
+    background: #0d365f;
+    margin: auto;
+}
+
+footer li{
+    list-style: none;
+    display: inline;
+}
+
+header{
+    background: #0d365f;
+    overflow: hidden;
+}
+
+header li{
+    list-style: none;
+    display: inline;
+}
+
+h1{
+    color: #0d365f;
+    display: inline-block;
+    font-size: 3.5em;
+    font-weight: 400;
+    margin: 2em auto 3em auto;
+    position: relative;
+}
+
+h1::after{
+    left: 100%;
+}
+
+h1::before{
+    right: 100%;
+}
+
+h1::before, h1::after{
+    content: '';
+    background: #e5e5e5;
+    height: 2px;
+    position: absolute;
+    top: 0.7em;
+    width: 330px;
+}
+
+h2{
+    color: #0d365f;
+    font-size: 2.7em;
+    line-height: 1.7em;
+}
+
+h3{
+    color: #1860a9;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+h4{
+    color: #0d365f;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+input{
+    border: solid 2px #ddd;
+    height: 35px;
+    margin-left: 0;
+    margin-top: 0.5em;
+}
+
+input:focus{
+    border: solid 2px #AAAAAA;
+}
+
+.apell{
+    float: right;
+    width: 49%;
+}
+
+.colum{
+    color: #28323f;
+    font-size: 0.9em;
+    line-height: 1.6em;
+    margin: auto;
+    overflow: hidden;
+    width: 99%;
+}
+
+.colum-der{
+    float: right;
+    padding-left: 25px;
+    text-align: left;
+    width: 33%;
+}
+
+.colum-izq{
+    float: left;
+    padding-right: 10px;
+    text-align: justify;
+    width: 67%;
+}
+
+.colum-izq ul, .colum-der ul{
+    line-height: 1.7em;
+    list-style: disc;
+    margin: 0 0 3em 1.7em;
+}
+
+.cont{
+    display: table;
+    float: left;
+    margin: 3em auto 6em auto;
+    padding-right: 13px;
+    width: 33%;
+}
+
+.contenido{
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+    width: 90%;
+}
+
+.enviar{
+    background: #114478;
+    border: solid 1px #114478;
+    border-radius: 4px;
+    color: #fff;
+    margin: 20px 0;
+    padding: 1em;
+}
+
+.enviar:hover{
+    background: rgb(24, 96, 169);
+    color: #ffb700;
+}
+
+.fig{
+    display: block;
+    float: left;
+    margin: auto;
+    padding: 0 1% 0 1%;
+    width: 33%;
+}
+
+.fig i{
+    color: #fff;
+    background: #1860a9;
+    border: solid 0.1em #1860a9;
+    border-radius: 50%;
+    font-size: 4.5em;
+    height: 200px;
+    padding-top: 50px;
+    width: 200px;
+}
+
+.fig-down{
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.fig-down h3{
+    color: #ffb700;
+    font-size: 1.2em;
+}
+
+.fig-down p{
+    color: #fff;
+    font-size: 0.9em;
+}
+
+.fig-up{
+    padding: 1em 0 1em 0;
+}
+
+.formulario{
+    float: left;
+    text-align: left;
+    width: 47%
+}
+
+.formulario li{
+    list-style: none;
+    padding: 0.5em 0;
+}
+
+.h-down{
+    float: right;
+    margin: auto;
+    padding: 0.5em 0.5em 2em 1em;
+}
+
+.h-down a{
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: bold;
+    letter-spacing: 0.04em;
+    padding-right: 1.7em;
+    text-decoration: none;
+}
+
+.h-down a:hover{
+    color: #ffb700;
+    text-decoration: underline;
+}
+
+#h-up{
+    color: #999999;
+    font-size: 3.4em;
+    letter-spacing: -0.05em;
+    padding: 0.2em 0 0.3em 1.7em;
+}
+
+.icon{
+    display: table-cell;
+    min-width: 115px;
+    position: relative;
+    vertical-align: middle;
+}
+
+.icon-down i{
+    color: #114478;
+    font-size: 5em;
+    height: 82px;
+    left: 15px;
+    position: absolute;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+.icon-up i{
+    color: #fff;
+    font-size: 1.7em;
+    left: 38px;
+    position: absolute;
+    transform: translateY(-55%);
+    z-index: 1;
+}
+
+.info{
+    float: right;
+    text-align: left;
+    width: 47%
+}
+
+.info h2{
+    font-weight: 400;
+}
+
+.lab1{
+    color: #808E9F;
+    display: table;
+    font-size: 0.7em;
+    position: relative;
+    width: 100%;
+}
+
+.lab1 input, .lab2 input, .lab3 input{
+    width: 100%;
+}
+
+.lab3 input{
+    height: 200px;
+}
+
+.menu{
+    font-size: 0.75em;
+    margin: auto;
+    padding: 6.2em 0 2em 0;
+    text-align: center;
+    width: 100%;
+}
+
+.menu a{
+    color: #ffb700;
+    letter-spacing: 0.05em;
+    padding-right: 0.4em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu a:hover{
+    color: #ffb700;
+    opacity: 0.5;
+}
+
+.menu p{
+    color: #fff;
+    letter-spacing: 0.04em;
+    padding-top: 1.7em;
+}
+
+.nomb{
+    float: left;
+    width: 49%;
+}
+
+.required::after{
+    color: #ffb700;
+    content:"*";
+}
+
+.sect{
+    margin: auto;
+    text-align: center;
+    width: 90%;
+}
+
+.slash{
+    color: #547c8e;
+    padding-right: 0.4em;
+}
+
+.scroll i{
+    border: solid 0.1em #0b2b4b;
+    border-radius: 1em;
+    bottom: 0.6em;
+    color: #0b2b4b;
+    padding: 0.5em;
+    position: fixed;
+    z-index: 100;
+}
+
+.scroll i:hover{
+    border-color: #000;
+    color: #000;
+}
+
+.texto{
+    display: table-cell;
+    font-size: 0.9em;
+    line-height: 1.7em;
+    text-align: left;
+}
+
+
+
+.imagen, .telf{
+    display: none;
+}
+
+/* font-family: 'Noto Serif', serif; */
+
+
+
+@media only screen and (min-width:1500px){
+
+
+    .center{
+        margin: auto;
+        width: 1300px;
+    }
+
+}
+
+@media only screen and (max-width:900px){
+
+    .h-down a{
+        font-size: 1.3em;
+        padding-right: 1.5em;
+    }
+
+    #h-up{
+        padding: 0.2em 0 0.3em 1em;
+    }
+
+}
+
+@media only screen and (max-width:800px){
+
+    .contenido{
+        margin: 3em auto 3.6em auto;
+        width: 95%;
+    }
+
+    .colum-der, .colum-izq{
+        float: none;
+        padding-left: 20px;
+        width: 100%;
+    }
+
+    .cont{
+        display: block;
+        margin: 0 auto 1em auto;
+        width: 100%;
+    }
+
+    .fig{
+        display: block;
+        float: none;
+        padding-bottom: 15px;
+        width: 90%;
+    }
+
+    .formulario, .info{
+        float: none;
+        text-align: left;
+        width: 100%
+    }
+
+    .h-down{
+        float: none;
+        text-align: center;
+    }
+
+    .h-down a{
+        padding-right: 1.3em;
+    }
+
+}
